@@ -71,6 +71,7 @@ body {
 }
 
 .image {
+    box-sizing: border-box;
     column-count: 3;
     column-gap: 10px; 
     width: 100%; 
