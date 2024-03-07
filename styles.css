@@ -9,7 +9,7 @@
 body {
     display: flex;
     background: floralwhite;
-    height: 96vh;
+    height: 94vh;
     margin: 1em;
 }
 
@@ -28,6 +28,16 @@ body {
     justify-content: space-between;
     /* border: solid green 1px; */
     margin: 1em;
+}
+
+.header-left::after, .header-right::after {
+    content: '';
+    position: absolute;
+    bottom: 8px; 
+    width: 48%;
+    height: 1px; 
+    background: black;
+    border-radius: 4px;
 }
 
 a:hover {
@@ -66,19 +76,19 @@ main {
 
 .grid {
     border: solid red 2px;
+    margin-top: -1%;
 }
 
 .grid-item {
-    width: 30%;
-    margin: 0.5em;
+    width: 31%;
+    margin: 0.5rem;
 }
 
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     height: 50%;
-    border-radius: 20%;
   }
   
   /* Track */
@@ -89,6 +99,7 @@ main {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #000000;
+    border-radius: 50px;
   }
   
   /* Handle on hover */
