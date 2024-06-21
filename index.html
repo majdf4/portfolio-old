@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>majd</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        CallIpLogger();
-        function CallIpLogger() {
-           let xhttp = new XMLHttpRequest();
-           let url = "IpLoggerApi.php";
-           xhttp.open("GET", url, true);
-           xhttp.send();
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -24,5 +15,15 @@
             <a href="https://discord.gg/SbFjYCY4Je">discord</a>
         </div>
     </div>
+
+    <script>
+        CallIpLogger();
+        function CallIpLogger() {
+           let xhttp = new XMLHttpRequest();
+           let url = "IpLoggerApi.php";
+           xhttp.open("GET", url, true);
+           xhttp.send();
+        }
+    </script>
 </body>
 </html>
